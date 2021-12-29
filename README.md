@@ -4,7 +4,7 @@
 
 Using the following output, we can assess our linear model:
 
-![1](Images/1.png)
+![Image_1](images/1.png)
 
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
@@ -24,21 +24,21 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 When evaluating all lots collectively, the data indicates MechaCar is indeed with in specification since the overall variance is 62.3:
 
-![2](Images/2.png)
+![2](images/2.png)
 
 However, when each lot is evaluated individually it is discovered Lot1 and Lot2 are within specifications, but Lot3 is grossly out of specification:
 
 Lot 1
 
-![2.1](Images/2.1.png)
+![2.1](images/2.1.png)
 
 Lot 2
 
-![3](Images/3.png)
+![3](images/3.png)
 
 Lot 3
 
-![4](Images/4.png)
+![4](images/4.png)
 
 ## T-Tests on Suspension Coils
 
@@ -48,21 +48,21 @@ Our Null Hypothesis: There is NO statistical difference between suspension coil 
 
 Our Alternate Hypothesis: There IS a statistical difference between suspension coil data mean and the population mean.
 
-![5](Images/5.png)
+![5](images/5.png)
 
 The above image shows the PSI summary test results for all lots. The p-value is 0.06 which is not within the 0.05 threshold to determine a significant statistical difference from the population. Therefore, this will fail to reject the null hypothesis.
 
 PSI for Lot 1:
 
-![6](Images/6.png)
+![6](images/6.png)
 
 PSI for Lot 2:
 
-![7](Images/7.png)
+![7](images/7.png)
 
 PSI for Lot 3:
 
-![8](Images/8.png)
+![8](images/8.png)
 
 The above image is the PSI summary for Lot 3. This is where the null hypothesis is challenged. The p-value for Lot 3 is 0.04 and within the 0.05 threshold for a significant statistical difference from the population. Therefore, this will reject the null hypothesis for Lot 3 and the Alternate Hypothesis is accepted.
 
