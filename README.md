@@ -3,6 +3,7 @@
 ## Linear Regression to Predict MPG
 
 Using the following output, we can assess our linear model:
+
 ![1](Images/1.png)
 
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
