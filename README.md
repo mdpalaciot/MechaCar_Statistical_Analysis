@@ -28,17 +28,11 @@ When evaluating all lots collectively, the data indicates MechaCar is indeed wit
 
 However, when each lot is evaluated individually it is discovered Lot1 and Lot2 are within specifications, but Lot3 is grossly out of specification:
 
-Lot 1
+Lot_Summary
 
-![2.1](images/2.1.png)
+![Lot_Summary](images/Lot_Summary.png)
 
-Lot 2
 
-![3](images/3.png)
-
-Lot 3
-
-![4](images/4.png)
 
 ## T-Tests on Suspension Coils
 
