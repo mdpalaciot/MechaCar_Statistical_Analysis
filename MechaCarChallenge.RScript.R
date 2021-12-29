@@ -14,13 +14,13 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 # DELIVERABLE 2
 # Import and read suspension coil csv as a table
-Suspension <- read.csv(file='data/Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+mechaCarSusCoilDF <- read.csv("data/Suspension_Coil.csv", check.names=F, stringsAsFactors = F)
 
-#get a total summary
-summarize_demo <- Suspension %>% summarize(Mean=mean(PSI),Median=(PSI),Variance=var(PSI),SD=sd(PSI)) 
+# Create total_summary dataframe using summarize() to get mean, median, variance, and std dev of PSI
+total_summary <- mechaCarSusCoilDF %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),StdDev=sd(PSI))
 
-#create a lot summary
-lot_demo <- Suspension %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=(PSI),Variance=var(PSI),SD=sd(PSI))
+# Create lot_summary dataframe using group_by() and summarize() for each lot for mean, median, variance and std dev of PSI
+lot_summary <- mechaCarSusCoilDF %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),StdDev=sd(PSI))
 
 #Deliverable 3 
 #perform t-test to determine if the PSI across 
